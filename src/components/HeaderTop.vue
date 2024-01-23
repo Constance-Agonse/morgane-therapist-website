@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="bg-green text-dark-green flex flex-row justify-between font-title">
+    <div class="bg-green text-dark-green flex flex-row justify-between font-title py-3.5 px-7">
       <div class="flex flex-col text-left">
         <h1>Morgane Joulié</h1>
         <h3>Psychologue clinicienne</h3>
@@ -10,7 +10,7 @@
         <p>07 83 10 07 32</p>
       </div>
     </div>
-    <div class="bg-dark-green text-green flex flex-row justify-between font-body">
+    <div class="bg-dark-green text-green flex flex-row justify-between font-body py-3.5 px-7 uppercase">
       <div>Les consultations</div>
       <div>Parcours professionnel</div>
       <div>INFORMATIONS PRATIQUES</div>
@@ -28,23 +28,3 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
-</style>
