@@ -9,6 +9,7 @@ module.exports = {
       'dark-green': '#3A5543',
       'green': '#C5D7C0',
       'light-green': '#EFF2EF',
+      'white': '#FFFFFF'
     },
     fontFamily: {
       'body': ['Red Hat Text'],
