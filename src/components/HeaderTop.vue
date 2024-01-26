@@ -2,7 +2,7 @@
   <div class="">
     <div class="bg-green text-dark-green flex flex-row justify-between font-title py-3.5 px-7">
       <div class="flex flex-col text-left">
-        <h1>Morgane Joulié</h1>
+        <h1 class="text-2xl">Morgane Joulié</h1>
         <h3>Psychologue clinicienne</h3>
       </div>
       <div class="flex flex-col text-right">
