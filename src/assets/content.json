@@ -1,5 +1,6 @@
 [{
   "title": "Les consultations au cabinet :",
+  "id": "consultation",
   "content": [
     "Les consultations psychologiques permettent d'accueillir une difficulté ressentie ou un mal-être diffus, de réfléchir ensemble à la demande qui est faite à ce sujet, et de vous accompagner pour composer au mieux avec qui vous êtes.",
     "Après les premiers rendez-vous qui permettent de faire connaissance, nous définirons ensemble le cadre thérapeutique le plus adapté à votre situation (consultations, travail thérapeutique régulier appelé psychothérapie, suivi parent(s)-enfant, soutien parental, et/ou une orientation vers un professionnel si besoin et avec votre accord) ainsi que la fréquence nécessaire.",
@@ -11,6 +12,7 @@
 },
   {
   "title":"Expériences professionnelles :",
+  "id": "pro",
   "content": [
     "J'ai travaillé plusieurs années auprès de populations adultes et étudiantes (présentant des difficultés relationnelles, amoureuses, conjugales ou familiales, des angoisses, une tristesse, une souffrance liée à une séparation, des gênes par rapport à leur fonctionnement, des difficultés à s'investir ou des blocages) dans plusieurs institutions (université, CMP, MDA).",
     "Actuellement, en parallèle de ma pratique en cabinet, j'exerce au sein d'un centre médico-psychologique (CMP) pour enfants et adolescents présentant des difficultés diverses (difficultés de langage, problèmes de comportement, colères, agitation, peurs, difficultés à l'école, difficultés dans les relations aux autres enfants, démobilisation dans le travail scolaire, angoisses, idées noires, etc.)."

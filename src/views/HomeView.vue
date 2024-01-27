@@ -3,7 +3,7 @@
     <HeaderTop class="sticky top-0" ref="header"/>
     <LandingPage :height="contentHeight" class="h-full"/>
     <div class="pl-28 pb-14 bg-light-green" v-for="content in contentData" :key="content.title">
-      <ContentCard :title="content.title" :content="content.content"></ContentCard>
+      <ContentCard :title="content.title" :content="content.content" :id="content.id"></ContentCard>
     </div>
   </div>
 </template>
