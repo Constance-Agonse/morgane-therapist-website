@@ -1,10 +1,11 @@
 <template>
   <div>
     <HeaderTop class="sticky top-0" ref="header"/>
-    <LandingPage :height="contentHeight" class="h-full"/>
+    <LandingPage :height="contentHeight" class="h-full" id="landing"/>
     <div class="pl-28 pb-14 bg-light-green" v-for="content in contentData" :key="content.title">
       <ContentCard :title="content.title" :content="content.content" :id="content.id"></ContentCard>
     </div>
+    <FooterEnd/>
   </div>
 </template>
 
@@ -13,13 +14,15 @@ import ContentCard from '@/components/ContentCard.vue'
 import contentData from '@/assets/content.json'
 import HeaderTop from '@/components/HeaderTop.vue'
 import LandingPage from '@/components/LandingPage.vue'
+import FooterEnd from '@/components/FooterEnd.vue'
 
 export default {
   name: 'HomeView',
   components: {
     HeaderTop,
     ContentCard,
-    LandingPage
+    LandingPage,
+    FooterEnd
 },
   data() {
     return {
