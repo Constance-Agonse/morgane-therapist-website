@@ -16,17 +16,6 @@ export default {
   props: {
     msg: String
   },
-  data() {
-    return {
-      navigations: [
-        { id: '#consultation', name: 'Les consultations' },
-        { id: '#pro', name: 'Parcours professionnel' },
-        { id: '#pratical', name: 'Informations pratiques' },
-        { id: '#rdv', name: 'Prendre rendez-vous' },
-      ]
-    }
-  }
-
 }
 </script>
 

@@ -1,11 +1,14 @@
 <template>
-  <div>
-    <HeaderTop class="sticky top-0" ref="header"/>
-    <LandingPage :height="contentHeight" class="h-full" id="landing"/>
-    <div class="pl-28 pb-14 bg-light-green" v-for="content in contentData" :key="content.title">
-      <ContentCard :title="content.title" :content="content.content" :id="content.id"></ContentCard>
+  <div class="bg-light-green">
+    <HeaderTop class="sticky top-0" ref="header" />
+    <div class="px-28">
+      <LandingPage :height="contentHeight" class="h-full max-w-[850px]" id="landing" />
+      <div v-for="content in contentData" :key="content.title" class="pb-14 text-base max-w-[850px]">
+        <ContentCard :title="content.title" :content="content.content" :id="content.id"></ContentCard>
+      </div>
+      <PraticalSection class="pb-14"/>
     </div>
-    <FooterEnd/>
+    <FooterEnd />
   </div>
 </template>
 
@@ -15,6 +18,7 @@ import contentData from '@/assets/content.json'
 import HeaderTop from '@/components/HeaderTop.vue'
 import LandingPage from '@/components/LandingPage.vue'
 import FooterEnd from '@/components/FooterEnd.vue'
+import PraticalSection from '@/components/PraticalSection.vue'
 
 export default {
   name: 'HomeView',
@@ -22,8 +26,9 @@ export default {
     HeaderTop,
     ContentCard,
     LandingPage,
-    FooterEnd
-},
+    FooterEnd,
+    PraticalSection
+  },
   data() {
     return {
       contentData,
