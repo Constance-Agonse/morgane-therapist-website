@@ -5,6 +5,7 @@
       <div v-for="message in content" :key="message.index" class="pb-3">
         {{ message }}
       </div>
+      <slot></slot>
     </div>
   </div>
 </template>

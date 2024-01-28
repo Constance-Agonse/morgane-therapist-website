@@ -4,9 +4,11 @@
     <div class="px-28">
       <LandingPage :height="contentHeight" class="h-full max-w-[850px]" id="landing" />
       <div v-for="content in contentData" :key="content.title" class="pb-14 text-base max-w-[850px]">
-        <ContentCard :title="content.title" :content="content.content" :id="content.id"></ContentCard>
+        <ContentCard :title="content.title" :content="content.content" :id="content.id" class="relative">
+          <ProCV v-if="content.id === 'pro'"/>
+        </ContentCard>
       </div>
-      <PraticalSection class="pb-14"/>
+      <PraticalSection class="pb-14" />
     </div>
     <FooterEnd />
   </div>
@@ -19,6 +21,7 @@ import HeaderTop from '@/components/HeaderTop.vue'
 import LandingPage from '@/components/LandingPage.vue'
 import FooterEnd from '@/components/FooterEnd.vue'
 import PraticalSection from '@/components/PraticalSection.vue'
+import ProCV from '@/components/ProCV.vue'
 
 export default {
   name: 'HomeView',
@@ -27,7 +30,8 @@ export default {
     ContentCard,
     LandingPage,
     FooterEnd,
-    PraticalSection
+    PraticalSection,
+    ProCV
   },
   data() {
     return {
@@ -51,7 +55,7 @@ export default {
       // Calculate the remaining height of the screen
       this.contentHeight = window.innerHeight - headerHeight;
       console.log('this.contentHeight:', this.contentHeight)
-    },
+    }
   },
 }
 </script>
