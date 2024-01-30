@@ -7,9 +7,10 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       'dark-green': '#3A5543',
+      'darker-green': '#2D4134',
       'green': '#C5D7C0',
       'light-green': '#EFF2EF',
-      'white': '#FFFFFF'
+      'white': '#FFFFFF',
     },
     fontFamily: {
       'body': ['Red Hat Text'],
