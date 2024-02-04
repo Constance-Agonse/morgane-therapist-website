@@ -9,7 +9,7 @@
         <div>Le cabinet, situé dans le 18e arrondissement de Paris, est un petit cabinet paramédical où travaillent
           plusieurs psychologues, une infirmière, un ostéopathe.
         </div>
-        <a href="tel:0783100732" class="flex flex-row gap-2 items-center transition-scale duration-300 ease-in-out hover:scale-[1.025] hover:text-dark-green">
+        <a href="tel:0783100732" class="text-dark-green flex flex-row gap-2 items-center transition-all duration-300 ease-in-out hover:scale-[1.025] hover:text-darker-green hover:underline">
           <i class="fa-solid fa-phone"></i>
           07 83 10 07 32
         </a>

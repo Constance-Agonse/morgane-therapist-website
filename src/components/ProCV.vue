@@ -47,7 +47,7 @@
       </div>
     </div>
     <button
-      class="absolute right-10 bottom-3 text-small transition-scale duration-300 ease-in-out hover:scale-[1.025] hover:text-dark-green"
+      class="text-dark-green absolute right-10 bottom-3 text-small transition-all duration-300 ease-in-out hover:scale-[1.025] hover:text-darker-green hover:underline"
       @click="showMoreContent()">{{ showMoreInfo ? 'Voir moins' : 'Voir plus' }}</button>
   </div>
 </template>

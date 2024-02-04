@@ -1,14 +1,18 @@
 <template>
+  <div class="z-30 fixed h-screen w-screen flex items-center justify-center" v-if="isAppointmentModalShown" @click.stop="showAppointmentModal()">
+    <TakeAppointmentModal />
+  </div>
+  <div v-if="isAppointmentModalShown" class="fixed top-0 z-20 h-screen w-screen bg-darker-green opacity-60"></div>
   <div class="bg-light-green">
-    <HeaderTop class="sticky top-0" ref="header" />
+    <HeaderTop class="sticky top-0 z-10" ref="header" @appointmentClicked="showAppointmentModal()"/>
     <div class="px-28">
       <LandingPage :height="contentHeight" class="h-full max-w-[850px]" id="landing" />
-      <div v-for="content in contentData" :key="content.title" class="pb-14 text-base max-w-[850px]">
+      <div v-for="content in contentData" :key="content.title" class="pb-14 text-base max-w-[850px]" id="pro">
         <ContentCard :title="content.title" :content="content.content" :id="content.id" class="relative">
           <ProCV v-if="content.id === 'pro'"/>
         </ContentCard>
       </div>
-      <PraticalSection class="pb-14" />
+      <PraticalSection class="pb-14" id="pratical"/>
     </div>
     <FooterEnd />
   </div>
@@ -22,6 +26,7 @@ import LandingPage from '@/components/LandingPage.vue'
 import FooterEnd from '@/components/FooterEnd.vue'
 import PraticalSection from '@/components/PraticalSection.vue'
 import ProCV from '@/components/ProCV.vue'
+import TakeAppointmentModal from '@/components/TakeAppointmentModal.vue'
 
 export default {
   name: 'HomeView',
@@ -31,12 +36,14 @@ export default {
     LandingPage,
     FooterEnd,
     PraticalSection,
-    ProCV
+    ProCV,
+    TakeAppointmentModal
   },
   data() {
     return {
       contentData,
       contentHeight: 0,
+      isAppointmentModalShown: false
     }
   },
   mounted() {
@@ -55,6 +62,9 @@ export default {
       // Calculate the remaining height of the screen
       this.contentHeight = window.innerHeight - headerHeight;
       console.log('this.contentHeight:', this.contentHeight)
+    },
+    showAppointmentModal() {
+      this.isAppointmentModalShown =! this.isAppointmentModalShown; 
     }
   },
 }
