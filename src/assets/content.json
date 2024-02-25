@@ -1,21 +1,130 @@
-[{
-  "title": "Les consultations au cabinet :",
-  "id": "consultation",
-  "content": [
-    "Les consultations psychologiques permettent d'accueillir une difficulté ressentie ou un mal-être diffus, de réfléchir ensemble à la demande qui est faite à ce sujet, et de vous accompagner pour composer au mieux avec qui vous êtes.",
-    "Après les premiers rendez-vous qui permettent de faire connaissance, nous définirons ensemble le cadre thérapeutique le plus adapté à votre situation (consultations, travail thérapeutique régulier appelé psychothérapie, suivi parent(s)-enfant, soutien parental, et/ou une orientation vers un professionnel si besoin et avec votre accord) ainsi que la fréquence nécessaire.",
-    "Je propose des thérapies individuelles d'inspiration psychanalytique par la parole avec les adultes, qui visent à mettre en narration sa propre histoire, pouvoir faire du lien entre sa situation actuelle et des éléments du passé, à comprendre les répétitions et les insatisfactions qui se jouent au sein des relations et la place que l'on y occupe, à prendre davantage conscience de ses sentiments ou ses pensées inconscientes.",
-    "Un travail thérapeutique a notamment pour but de pouvoir créer un espace interne de retour sur soi pour soi, de saisir de ce qui se joue pour nous, et de devenir plus conscient de la nature de nos désirs, de nos sentiments et des implications de nos actes.",
-    "Avec les enfants, je prends d'abord un temps de consultations avec le(s) parent(s) et l'enfant. Si un travail thérapeutique régulier se met ensuite en place pour l'enfant, c'est au travers le jeu, le dessin et la parole, que l'enfant met en scène les problématiques qui l'occupent, ce qui lui permet de se les représenter et, avec l'aide du psychologue, de pouvoir mieux y faire face."
-
-  ]
-},
+[
   {
-  "title":"Expériences professionnelles :",
-  "id": "pro",
-  "content": [
-    "J'ai travaillé plusieurs années auprès de populations adultes et étudiantes (présentant des difficultés relationnelles, amoureuses, conjugales ou familiales, des angoisses, une tristesse, une souffrance liée à une séparation, des gênes par rapport à leur fonctionnement, des difficultés à s'investir ou des blocages) dans plusieurs institutions (université, CMP, MDA).",
-    "Actuellement, en parallèle de ma pratique en cabinet, j'exerce au sein d'un centre médico-psychologique (CMP) pour enfants et adolescents présentant des difficultés diverses (difficultés de langage, problèmes de comportement, colères, agitation, peurs, difficultés à l'école, difficultés dans les relations aux autres enfants, démobilisation dans le travail scolaire, angoisses, idées noires, etc.)."
-  ]
-}
+    "title": "Les consultations au cabinet :",
+    "titleSmall": "Présentation",
+    "isDisplayedInBigScreen": true,
+    "id": "consultation",
+    "icon": "fa-solid fa-user-doctor",
+    "firstContentSmall": [
+      "Psychologue diplômée et psychothérapeute, j'accueille les adultes et également les jeunes enfants et les adolescents, sur rendez-vous au cabinet."
+    ],
+    "content": [
+      "Les consultations psychologiques permettent d'accueillir une difficulté ressentie ou un mal-être diffus, de réfléchir ensemble à la demande qui est faite à ce sujet, et de vous accompagner pour composer au mieux avec qui vous êtes.",
+      "Après les premiers rendez-vous qui permettent de faire connaissance, nous définirons ensemble le cadre thérapeutique le plus adapté à votre situation (consultations, travail thérapeutique régulier appelé psychothérapie, suivi parent(s)-enfant, soutien parental, et/ou une orientation vers un professionnel si besoin et avec votre accord) ainsi que la fréquence nécessaire.",
+      "Je propose des thérapies individuelles d'inspiration psychanalytique par la parole avec les adultes, qui visent à mettre en narration sa propre histoire, pouvoir faire du lien entre sa situation actuelle et des éléments du passé, à comprendre les répétitions et les insatisfactions qui se jouent au sein des relations et la place que l'on y occupe, à prendre davantage conscience de ses sentiments ou ses pensées inconscientes.",
+      "Un travail thérapeutique a notamment pour but de pouvoir créer un espace interne de retour sur soi pour soi, de saisir de ce qui se joue pour nous, et de devenir plus conscient de la nature de nos désirs, de nos sentiments et des implications de nos actes.",
+      "Avec les enfants, je prends d'abord un temps de consultations avec le(s) parent(s) et l'enfant. Si un travail thérapeutique régulier se met ensuite en place pour l'enfant, c'est au travers le jeu, le dessin et la parole, que l'enfant met en scène les problématiques qui l'occupent, ce qui lui permet de se les représenter et, avec l'aide du psychologue, de pouvoir mieux y faire face."
+    ],
+    "contentSmall": [
+      {
+        "class": "font-body",
+        "text": "Psychologue diplômée et psychothérapeute, j'accueille les adultes et également les jeunes enfants et les adolescents, sur rendez-vous au cabinet."
+      },
+      {
+        "class": "font-body",
+        "text": "Les consultations psychologiques permettent d'accueillir une difficulté ressentie ou un mal-être diffus, de réfléchir ensemble à la demande qui est faite à ce sujet, et de vous accompagner pour composer au mieux avec qui vous êtes."
+      },
+      {
+        "class": "font-body",
+        "text": "Après les premiers rendez-vous qui permettent de faire connaissance, nous définirons ensemble le cadre thérapeutique le plus adapté à votre situation (consultations, travail thérapeutique régulier appelé psychothérapie, suivi parent(s)-enfant, soutien parental, et/ou une orientation vers un professionnel si besoin et avec votre accord) ainsi que la fréquence nécessaire."
+      },
+      {
+        "class": "font-body",
+        "text": "Je propose des thérapies individuelles d'inspiration psychanalytique par la parole avec les adultes, qui visent à mettre en narration sa propre histoire, pouvoir faire du lien entre sa situation actuelle et des éléments du passé, à comprendre les répétitions et les insatisfactions qui se jouent au sein des relations et la place que l'on y occupe, à prendre davantage conscience de ses sentiments ou ses pensées inconscientes."
+      },
+      {
+        "class": "font-body",
+        "text": "Un travail thérapeutique a notamment pour but de pouvoir créer un espace interne de retour sur soi pour soi, de saisir de ce qui se joue pour nous, et de devenir plus conscient de la nature de nos désirs, de nos sentiments et des implications de nos actes."
+      },
+      {
+        "class": "font-body",
+        "text": "Avec les enfants, je prends d'abord un temps de consultations avec le(s) parent(s) et l'enfant. Si un travail thérapeutique régulier se met ensuite en place pour l'enfant, c'est au travers le jeu, le dessin et la parole, que l'enfant met en scène les problématiques qui l'occupent, ce qui lui permet de se les représenter et, avec l'aide du psychologue, de pouvoir mieux y faire face."
+      }
+    ]
+  },
+  {
+    "title": "Expériences professionnelles :",
+    "id": "pro",
+    "icon": "fa-solid fa-location-dot",
+    "isDisplayedInBigScreen": true,
+    "content": [
+      "J'ai travaillé plusieurs années auprès de populations adultes et étudiantes (présentant des difficultés relationnelles, amoureuses, conjugales ou familiales, des angoisses, une tristesse, une souffrance liée à une séparation, des gênes par rapport à leur fonctionnement, des difficultés à s'investir ou des blocages) dans plusieurs institutions (université, CMP, MDA).",
+      "Actuellement, en parallèle de ma pratique en cabinet, j'exerce au sein d'un centre médico-psychologique (CMP) pour enfants et adolescents présentant des difficultés diverses (difficultés de langage, problèmes de comportement, colères, agitation, peurs, difficultés à l'école, difficultés dans les relations aux autres enfants, démobilisation dans le travail scolaire, angoisses, idées noires, etc.)."
+    ]
+  },
+  {
+    "title": "Adresse :",
+    "titleSmall": "Adresse",
+    "isDisplayedInBigScreen": false,
+    "id": "address",
+    "icon": "fa-solid fa-location-dot",
+    "firstContentSmall": [
+      "13 Rue du Baigneur",
+      "75018 Paris"
+    ],
+    "contentSmall": [
+      {
+        "class": "font-body",
+        "text": "13 Rue du Baigneur"
+      },
+      {
+        "class": "font-body",
+        "text": "75018 Paris"
+      },
+      {
+        "type": "link",
+        "text": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.3261752023423!2d2.34113517700104!3d48.8901206713365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e5c4635224f%3A0x68d28940c7c320c1!2s13%20Rue%20du%20Baigneur%2C%2075018%20Paris!5e0!3m2!1sfr!2sfr!4v1708883893885!5m2!1sfr!2sfr' width='300' height='350' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+      },
+      {
+        "class": "font-title",
+        "text": "Moyens de transport :"
+      },
+      {
+        "class": "font-body",
+        "text": "Métro - Jules Joffrin (ligne 12)"
+      },
+      {
+        "class": "font-body",
+        "text": "Bus - Custine - Mont-Cenis (lignes 80 et Montmar)"
+      },
+      {
+        "class": "font-body",
+        "text": "Bus - Lamarck - Mont Cenis (ligne Montmar)"
+      },
+      {
+        "class": "font-title",
+        "text": "Informations pratiques :"
+      },
+      {
+        "class": "font-body",
+        "text": "Rez-de-chaussée"
+      }
+    ]
+  },
+  {
+    "title": "Prendre rendez-vous :",
+    "titleSmall": "Prendre rendez-vous :",
+    "isDisplayedInBigScreen": false,
+    "id": "appointement",
+    "icon": "fa-solid fa-phone",
+    "firstContentSmall": [
+      "J’accueille les patients le mardi de 9h à 20h.",
+      "07 83 10 07 32"
+    ],
+    "contentSmall": [
+      {
+        "class": "font-body",
+        "type": "phone",
+        "text": "07 83 10 07 32"
+      },
+      {
+        "class": "font-body",
+        "text": "Je suis joignable par téléphone pour toute question ou précision préalable. J’accueille les patients le mardi de 9h à 20h."
+      },
+      {
+        "class": "font-body",
+        "text": "Le cabinet est situé dans le 18e arrondissement de Paris. C'est un petit cabinet paramédical où travaillent plusieurs psychologues, une infirmière, un ostéopathe."
+      }
+    ]
+  }
 ]

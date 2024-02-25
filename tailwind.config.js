@@ -11,6 +11,7 @@ module.exports = {
       'green': '#C5D7C0',
       'light-green': '#EFF2EF',
       'white': '#FFFFFF',
+      'light-grey': '#f4f3f3',
     },
     fontFamily: {
       'body': ['Red Hat Text'],
