@@ -1,24 +1,31 @@
 <template>
-  <div class="z-30 fixed h-screen w-screen flex items-center justify-center" v-if="isAppointmentModalShown"
+  <div class="z-30 fixed h-screen w-screen flex items-center justify-center" v-if="isBigScreen && isAppointmentModalShown"
     @click.stop="showAppointmentModal()">
     <TakeAppointmentModal />
   </div>
   <div v-if="isAppointmentModalShown" class="fixed top-0 z-20 h-screen w-screen bg-darker-green opacity-60"></div>
-  <ModalPhone v-if="isModalDisplayed" @toggleModalView="toggleSmallCard()" class="fixed z-40"
-    :content="thematicOnFocus">
-  </ModalPhone>
+  <ModalPhone v-if="!isBigScreen && isModalDisplayed" @toggleModalView="toggleSmallCard()" class="fixed z-40"
+    :content="thematicOnFocus" />
   <div class="bg-light-green" :class="{ 'overflow-hidden': isModalDisplayed }">
     <div>
       <HeaderTopSmall class="sticky top-0 z-10" ref="header" @appointmentClicked="showAppointmentModal()" />
       <div class="p-6" :class="{ 'px-28': isBigScreen, 'overflow-hidden': isModalDisplayed }">
         <LandingPage v-if="isBigScreen" :height="contentHeight" class="h-full max-w-[850px]" id="landing" />
-        <div v-for="thematic in contentData" :key="thematic.title" class="pb-14 text-base max-w-[850px]" id="pro">
-          <ContentCardSmall :thematic="thematic" class="relative" @toggleModalView="toggleSmallCard(thematic)">
-            <ProCV v-if="thematic.id === 'pro'" />
-          </ContentCardSmall>
+        <div v-if="!isBigScreen">
+          <div v-for="thematic in contentData" :key="thematic.title" class="pb-6 max-w-[850px]" id="pro">
+            <div v-if="thematic.titleSmall">
+              <ContentCardSmall :thematic="thematic" class="relative" @toggleModalView="toggleSmallCard(thematic)"/>
+            </div>
+          </div>
+          <SmallGroupCards :content="contentDataGrouped" @toggleModalView="toggleSmallCard($event)"></SmallGroupCards>
         </div>
-        
-        <SmallGroupCards :content="contentDataGrouped" @toggleModalView="toggleSmallCard($event)"></SmallGroupCards>
+        <div v-if="isBigScreen">
+          <div v-for="thematic in contentData" :key="thematic.title" class="pb-14 text-base max-w-[850px]" id="pro">
+            <ContentCardSmall :thematic="thematic" class="relative" @toggleModalView="toggleSmallCard(thematic)">
+              <ProCV v-if="thematic.id === 'pro'" />
+            </ContentCardSmall>
+          </div>
+        </div>
         <PraticalSection v-if="isBigScreen" class="pb-14" id="pratical" />
       </div>
       <FooterEnd v-if="isBigScreen" />
@@ -89,7 +96,7 @@ export default {
       this.thematicOnFocus = thematic;
       console.log('this.thematicOnFocus:', this.thematicOnFocus)
       this.isModalDisplayed = !this.isModalDisplayed;
-      if (this.isModalDisplayed)  document.body.classList.add('overflow-hidden');
+      if (this.isModalDisplayed) document.body.classList.add('overflow-hidden');
       else if (!this.isModalDisplayed) document.body.classList.remove('overflow-hidden');
     }
   },
