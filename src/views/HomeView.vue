@@ -1,49 +1,67 @@
 <template>
-  <div class="z-30 fixed h-screen w-screen flex items-center justify-center" v-if="isAppointmentModalShown" @click.stop="showAppointmentModal()">
+  <div class="z-30 fixed h-screen w-screen flex items-center justify-center" v-if="isAppointmentModalShown"
+    @click.stop="showAppointmentModal()">
     <TakeAppointmentModal />
   </div>
   <div v-if="isAppointmentModalShown" class="fixed top-0 z-20 h-screen w-screen bg-darker-green opacity-60"></div>
-  <div class="bg-light-green">
-    <HeaderTop class="sticky top-0 z-10" ref="header" @appointmentClicked="showAppointmentModal()"/>
-    <div class="px-28">
-      <LandingPage :height="contentHeight" class="h-full max-w-[850px]" id="landing" />
-      <div v-for="content in contentData" :key="content.title" class="pb-14 text-base max-w-[850px]" id="pro">
-        <ContentCard :title="content.title" :content="content.content" :id="content.id" class="relative">
-          <ProCV v-if="content.id === 'pro'"/>
-        </ContentCard>
+  <ModalPhone v-if="isModalDisplayed" @toggleModalView="toggleSmallCard()" class="fixed z-40"
+    :content="thematicOnFocus">
+  </ModalPhone>
+  <div class="bg-light-green" :class="{ 'overflow-hidden': isModalDisplayed }">
+    <div>
+      <HeaderTopSmall class="sticky top-0 z-10" ref="header" @appointmentClicked="showAppointmentModal()" />
+      <div class="p-6" :class="{ 'px-28': isBigScreen, 'overflow-hidden': isModalDisplayed }">
+        <LandingPage v-if="isBigScreen" :height="contentHeight" class="h-full max-w-[850px]" id="landing" />
+        <div v-for="thematic in contentData" :key="thematic.title" class="pb-14 text-base max-w-[850px]" id="pro">
+          <ContentCardSmall :thematic="thematic" class="relative" @toggleModalView="toggleSmallCard(thematic)">
+            <ProCV v-if="thematic.id === 'pro'" />
+          </ContentCardSmall>
+        </div>
+        
+        <SmallGroupCards :content="contentDataGrouped" @toggleModalView="toggleSmallCard($event)"></SmallGroupCards>
+        <PraticalSection v-if="isBigScreen" class="pb-14" id="pratical" />
       </div>
-      <PraticalSection class="pb-14" id="pratical"/>
+      <FooterEnd v-if="isBigScreen" />
     </div>
-    <FooterEnd />
   </div>
 </template>
 
 <script>
-import ContentCard from '@/components/ContentCard.vue'
+import ContentCardSmall from '@/components/ContentCardSmall.vue'
 import contentData from '@/assets/content.json'
-import HeaderTop from '@/components/HeaderTop.vue'
+import contentDataGrouped from '@/assets/contentGrouped.json'
+// import HeaderTop from '@/components/HeaderTop.vue'
+import HeaderTopSmall from '@/components/HeaderTopSmall.vue'
 import LandingPage from '@/components/LandingPage.vue'
 import FooterEnd from '@/components/FooterEnd.vue'
 import PraticalSection from '@/components/PraticalSection.vue'
 import ProCV from '@/components/ProCV.vue'
 import TakeAppointmentModal from '@/components/TakeAppointmentModal.vue'
+import ModalPhone from '@/components/ModalPhone.vue'
+import SmallGroupCards from '@/components/SmallGroupCards.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HeaderTop,
-    ContentCard,
+    // HeaderTop,
+    HeaderTopSmall,
+    ContentCardSmall,
     LandingPage,
     FooterEnd,
     PraticalSection,
     ProCV,
-    TakeAppointmentModal
+    TakeAppointmentModal,
+    ModalPhone,
+    SmallGroupCards
   },
   data() {
     return {
       contentData,
       contentHeight: 0,
-      isAppointmentModalShown: false
+      isAppointmentModalShown: false,
+      isBigScreen: false,
+      isModalDisplayed: false,
+      contentDataGrouped,
     }
   },
   mounted() {
@@ -64,7 +82,15 @@ export default {
       console.log('this.contentHeight:', this.contentHeight)
     },
     showAppointmentModal() {
-      this.isAppointmentModalShown =! this.isAppointmentModalShown; 
+      this.isAppointmentModalShown = !this.isAppointmentModalShown;
+    },
+    toggleSmallCard(thematic) {
+      console.log('truc:', thematic)
+      this.thematicOnFocus = thematic;
+      console.log('this.thematicOnFocus:', this.thematicOnFocus)
+      this.isModalDisplayed = !this.isModalDisplayed;
+      if (this.isModalDisplayed)  document.body.classList.add('overflow-hidden');
+      else if (!this.isModalDisplayed) document.body.classList.remove('overflow-hidden');
     }
   },
 }
