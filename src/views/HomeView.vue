@@ -3,12 +3,13 @@
     @click.stop="showAppointmentModal()">
     <TakeAppointmentModal />
   </div>
-  <div v-if="isAppointmentModalShown" class="fixed top-0 z-20 h-screen w-screen bg-darker-green opacity-60"></div>
+  <div v-if="isBigScreen && isAppointmentModalShown" class="fixed top-0 z-20 h-screen w-screen bg-darker-green opacity-60"></div>
   <ModalPhone v-if="!isBigScreen && isModalDisplayed" @toggleModalView="toggleSmallCard()" class="fixed z-40"
     :content="thematicOnFocus" />
   <div class="bg-light-green" :class="{ 'overflow-hidden': isModalDisplayed }">
     <div>
-      <HeaderTopSmall class="sticky top-0 z-10" ref="header" @appointmentClicked="showAppointmentModal()" />
+      <HeaderTop v-if="isBigScreen" class="sticky top-0 z-10" ref="header" @appointmentClicked="showAppointmentModal()"/>
+      <HeaderTopSmall v-if="!isBigScreen" class="sticky top-0 z-10" ref="header" @appointmentClicked="showAppointmentModal()" />
       <div class="p-6" :class="{ 'px-28': isBigScreen, 'overflow-hidden': isModalDisplayed }">
         <LandingPage v-if="isBigScreen" :height="contentHeight" class="h-full max-w-[850px]" id="landing" />
         <div v-if="!isBigScreen">
@@ -21,9 +22,11 @@
         </div>
         <div v-if="isBigScreen">
           <div v-for="thematic in contentData" :key="thematic.title" class="pb-14 text-base max-w-[850px]" id="pro">
-            <ContentCardSmall :thematic="thematic" class="relative" @toggleModalView="toggleSmallCard(thematic)">
+            <div v-if="thematic.isDisplayedInBigScreen">
+              <ContentCard :thematic="thematic" class="relative" @toggleModalView="toggleSmallCard(thematic)">
               <ProCV v-if="thematic.id === 'pro'" />
-            </ContentCardSmall>
+            </ContentCard>
+            </div>
           </div>
         </div>
         <PraticalSection v-if="isBigScreen" class="pb-14" id="pratical" />
@@ -34,10 +37,12 @@
 </template>
 
 <script>
+import { ref, watchEffect, onMounted } from 'vue';
 import ContentCardSmall from '@/components/ContentCardSmall.vue'
+import ContentCard from '@/components/ContentCard.vue'
 import contentData from '@/assets/content.json'
 import contentDataGrouped from '@/assets/contentGrouped.json'
-// import HeaderTop from '@/components/HeaderTop.vue'
+import HeaderTop from '@/components/HeaderTop.vue'
 import HeaderTopSmall from '@/components/HeaderTopSmall.vue'
 import LandingPage from '@/components/LandingPage.vue'
 import FooterEnd from '@/components/FooterEnd.vue'
@@ -50,9 +55,10 @@ import SmallGroupCards from '@/components/SmallGroupCards.vue'
 export default {
   name: 'HomeView',
   components: {
-    // HeaderTop,
+    HeaderTop,
     HeaderTopSmall,
     ContentCardSmall,
+    ContentCard,
     LandingPage,
     FooterEnd,
     PraticalSection,
@@ -61,18 +67,47 @@ export default {
     ModalPhone,
     SmallGroupCards
   },
+  setup() {
+    const screenWidth = ref(window.innerWidth);
+    const updateScreenWidth = () => {
+      screenWidth.value = window.innerWidth;
+    };
+    watchEffect(() => {
+      window.addEventListener('resize', updateScreenWidth);
+      return () => {
+        window.removeEventListener('resize', updateScreenWidth);
+      };
+    });
+    onMounted(() => {
+      window.addEventListener('resize', updateScreenWidth);
+    });
+    const isBigScreen = ref(false);
+    watchEffect(() => {
+      if (screenWidth.value > 1024) { // Adjust the breakpoint as needed
+        isBigScreen.value = true;
+      } else {
+        isBigScreen.value = false;
+      }
+    });
+
+    return {
+      screenWidth,
+      isBigScreen
+    };
+    
+  },
   data() {
     return {
       contentData,
       contentHeight: 0,
       isAppointmentModalShown: false,
-      isBigScreen: false,
       isModalDisplayed: false,
       contentDataGrouped,
     }
   },
   mounted() {
     console.log('mounted:')
+    // console.log('screenWidth:', this.screenWidth)
     // Calculate content height when the component is mounted
     this.calculateContentHeight();
     // Recalculate content height when the window is resized

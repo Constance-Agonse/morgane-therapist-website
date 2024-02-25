@@ -2,6 +2,7 @@
   {
     "title": "Les consultations au cabinet :",
     "titleSmall": "Présentation",
+    "isDisplayedInBigScreen": true,
     "id": "consultation",
     "icon": "fa-solid fa-user-doctor",
     "firstContentSmall": [
@@ -45,6 +46,7 @@
     "title": "Expériences professionnelles :",
     "id": "pro",
     "icon": "fa-solid fa-location-dot",
+    "isDisplayedInBigScreen": true,
     "content": [
       "J'ai travaillé plusieurs années auprès de populations adultes et étudiantes (présentant des difficultés relationnelles, amoureuses, conjugales ou familiales, des angoisses, une tristesse, une souffrance liée à une séparation, des gênes par rapport à leur fonctionnement, des difficultés à s'investir ou des blocages) dans plusieurs institutions (université, CMP, MDA).",
       "Actuellement, en parallèle de ma pratique en cabinet, j'exerce au sein d'un centre médico-psychologique (CMP) pour enfants et adolescents présentant des difficultés diverses (difficultés de langage, problèmes de comportement, colères, agitation, peurs, difficultés à l'école, difficultés dans les relations aux autres enfants, démobilisation dans le travail scolaire, angoisses, idées noires, etc.)."
@@ -53,6 +55,7 @@
   {
     "title": "Adresse :",
     "titleSmall": "Adresse",
+    "isDisplayedInBigScreen": false,
     "id": "address",
     "icon": "fa-solid fa-location-dot",
     "firstContentSmall": [
@@ -101,6 +104,7 @@
   {
     "title": "Prendre rendez-vous :",
     "titleSmall": "Prendre rendez-vous :",
+    "isDisplayedInBigScreen": false,
     "id": "appointement",
     "icon": "fa-solid fa-phone",
     "firstContentSmall": [
