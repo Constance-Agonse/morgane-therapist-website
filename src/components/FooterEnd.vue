@@ -4,7 +4,7 @@
       <div>Morgane Joulié - Psychologue clinicienne</div>
       <div>Numéro ADELI : 789317237</div>
     </div>
-    <div class="text-xs">
+    <div class="text-[8px] text-black">
       site développé par Constance Agonsè - développeuse web
     </div>
   </div>
