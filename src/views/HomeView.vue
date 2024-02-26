@@ -1,21 +1,19 @@
 <template>
-  <div class="z-30 fixed h-screen w-screen flex items-center justify-center" v-if="isDesktop && isAppointmentModalShown"
-    @click.stop="showAppointmentModal()">
-    <TakeAppointmentModal />
+  <div class="z-30 fixed h-screen w-screen flex items-center justify-center" v-if="isDesktop && isAppointmentModalShown">
+    <TakeAppointmentModal @closeAppointmentModal="toggleAppointmentModal()" />
   </div>
-  <div v-if="isDesktop && isAppointmentModalShown" class="fixed top-0 z-20 h-screen w-screen bg-darker-green opacity-60"></div>
   <ModalPhone v-if="!isDesktop && isModalDisplayed" @toggleModalView="toggleSmallCard()" class="fixed z-40"
     :content="thematicOnFocus" />
   <div class="bg-light-green" :class="{ 'overflow-hidden': isModalDisplayed }">
     <div>
-      <HeaderTop v-if="isDesktop" class="sticky top-0 z-10" ref="header" @appointmentClicked="showAppointmentModal()"/>
-      <HeaderTopSmall v-if="!isDesktop" class="sticky top-0 z-10" ref="header" @appointmentClicked="showAppointmentModal()" />
+      <HeaderTop v-if="isDesktop" class="sticky top-0 z-10" ref="header" @appointmentClicked="toggleAppointmentModal()" />
+      <HeaderTopSmall v-if="!isDesktop" class="sticky top-0 z-10" ref="header" />
       <div class="p-6" :class="{ 'px-28': isDesktop, 'overflow-hidden': isModalDisplayed }">
         <LandingPage v-if="isDesktop" :height="contentHeight" class="h-full max-w-[850px]" id="landing" />
         <div v-if="!isDesktop">
           <div v-for="thematic in contentData" :key="thematic.title" class="pb-6 max-w-[850px]" id="pro">
             <div v-if="thematic.titleSmall">
-              <ContentCardSmall :thematic="thematic" class="relative" @toggleModalView="toggleSmallCard(thematic)"/>
+              <ContentCardSmall :thematic="thematic" class="relative" @toggleModalView="toggleSmallCard(thematic)" />
             </div>
           </div>
           <SmallGroupCards :content="contentDataGrouped" @toggleModalView="toggleSmallCard($event)"></SmallGroupCards>
@@ -24,8 +22,8 @@
           <div v-for="thematic in contentData" :key="thematic.title" class="pb-14 text-base max-w-[850px]" id="pro">
             <div v-if="thematic.isDisplayedInBigScreen">
               <ContentCard :thematic="thematic" class="relative" @toggleModalView="toggleSmallCard(thematic)">
-              <ProCV v-if="thematic.id === 'pro'"  isDesktop="true"/>
-            </ContentCard>
+                <ProCV v-if="thematic.id === 'pro'" isDesktop="true" />
+              </ContentCard>
             </div>
           </div>
         </div>
@@ -94,7 +92,7 @@ export default {
       screenWidth,
       isDesktop
     };
-    
+
   },
   data() {
     return {
@@ -123,7 +121,7 @@ export default {
       this.contentHeight = window.innerHeight - headerHeight;
       console.log('this.contentHeight:', this.contentHeight)
     },
-    showAppointmentModal() {
+    toggleAppointmentModal() {
       this.isAppointmentModalShown = !this.isAppointmentModalShown;
     },
     toggleSmallCard(thematic) {
