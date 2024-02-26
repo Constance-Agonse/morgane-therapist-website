@@ -14,7 +14,7 @@
        {{ sentence }}
       </div>
       <!-- TODO : ouvrir les petites cards à la façon des grandes cards -->
-      <!-- <div v-if="isBigScreen">
+      <!-- <div v-if="isDesktop">
         <div v-for="message in content" :key="message.index" class="pb-3">
           {{ message }}
         </div>
@@ -32,7 +32,7 @@ export default {
   },
   data() {
     return {
-      isBigScreen: false,
+      isDesktop: false,
     }
   },
   methods : {

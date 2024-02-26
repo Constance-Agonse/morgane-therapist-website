@@ -13,7 +13,7 @@
       <div v-for="(sentence, index) in thematic.firstContentSmall" :key="index">
        {{ sentence }}
       </div>
-      <div v-if="isBigScreen">
+      <div v-if="isDesktop"> 
         <div v-for="message in content" :key="message.index" class="pb-3">
           {{ message }}
         </div>
@@ -31,7 +31,7 @@ export default {
   },
   data() {
     return {
-      isBigScreen: false,
+      isDesktop: false,
     }
   },
   methods : {

@@ -6,7 +6,7 @@
         <h3>Psychologue clinicienne</h3>
       </div>
     </a>
-    <a v-if="isBigScreen" class="bg-green text-dark-green flex flex-row justify-between font-title py-3.5 px-7" href="#landing">
+    <a v-if="isDesktop" class="bg-green text-dark-green flex flex-row justify-between font-title py-3.5 px-7" href="#landing">
       <div class="flex flex-col text-left">
         <div  class="text-2xl">Morgane Joulié</div>
         <h3>Psychologue clinicienne</h3>
@@ -16,7 +16,7 @@
         <p>07 83 10 07 32</p>
       </div>
     </a>
-    <div v-if="isBigScreen" class="bg-dark-green text-green flex flex-row justify-between font-body py-3.5 px-7 uppercase">
+    <div v-if="isDesktop" class="bg-dark-green text-green flex flex-row justify-between font-body py-3.5 px-7 uppercase">
       <a v-for="(navigation, index) in navigations" :key="index"
         class="transition-all duration-300 ease-in-out hover:scale-[1.025] hover:text-light-green" :href="navigation.id" @click="navigation.clickFunction">
         {{ navigation.name }}
@@ -44,7 +44,7 @@ export default {
         { id: '#pratical', name: 'Informations pratiques' },
         { clickFunction: this.openAppointmentModal, name: 'Prendre rendez-vous' },
       ],
-      isBigScreen: false
+      isDesktop: false
     }
   },
 
