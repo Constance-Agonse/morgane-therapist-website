@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-row items-center gap-6 bg-light-green">
     <SmallCard title="Prendre rendez-vous" icon="fa-regular fa-calendar-check">
-      <div class="flex flex-col gap-6 items-center">
+      <div class="flex flex-col gap-4 items-center">
         <div>
           Je suis joignable par téléphone pour toute question ou précision préalable. J’accueille les patients le mardi de
           9h à 20h.
@@ -18,7 +18,7 @@
     </SmallCard>
 
     <SmallCard title="Accéder au cabinet" icon="fa-solid fa-location-dot">
-      <div class="flex flex-col gap-6 items-center">
+      <div class="flex flex-col gap-4 items-center">
         <div class="font-title">13 Rue du Baigneur, 75018 Paris</div>
         <div>
           <div class="font-title">Moyens de transport :</div>
@@ -40,7 +40,7 @@
     </SmallCard>
 
     <SmallCard title="A savoir" icon="fa-solid fa-circle-info">
-      <div class="flex flex-col gap-6 items-center">
+      <div class="flex flex-col gap-4 items-center">
         <div>
           <div class="font-title">Consultation de psychologie 60 €</div>
           <div class="text-xs">Ces honoraires vous sont communiqués à titre indicatif par le praticien et peuvent varier
