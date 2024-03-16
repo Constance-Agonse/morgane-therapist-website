@@ -2,12 +2,12 @@
   <div class="z-30 fixed h-screen w-screen flex items-center justify-center" v-if="isDesktop && isAppointmentModalShown">
     <TakeAppointmentModal @closeAppointmentModal="toggleAppointmentModal()" />
   </div>
-  <ModalPhone v-if="!isDesktop && isModalDisplayed" @toggleModalView="toggleSmallCard()" class="fixed z-40"
+  <ModalMobile v-if="!isDesktop && isModalDisplayed" @toggleModalView="toggleSmallCard()" class="fixed z-40"
     :content="thematicOnFocus" />
   <div class="bg-light-green" :class="{ 'overflow-hidden': isModalDisplayed }">
     <div>
-      <HeaderTop v-if="isDesktop" class="sticky top-0 z-10" ref="header" id="header" @appointmentClicked="toggleAppointmentModal()" />
-      <HeaderTopSmall v-if="!isDesktop" class="sticky top-0 z-10" ref="header" />
+      <HeaderTopDesktop v-if="isDesktop" class="sticky top-0 z-10" ref="header" id="header" @appointmentClicked="toggleAppointmentModal()" />
+      <HeaderTopMobile v-if="!isDesktop" class="sticky top-0 z-10" ref="header" />
       <div class="p-6" :class="{ 'px-28': isDesktop, 'overflow-hidden': isModalDisplayed }">
         <LandingPage v-if="isDesktop" :height="contentHeight" class="h-full max-w-[850px]" id="landing" />
         <div v-if="!isDesktop">
@@ -16,7 +16,7 @@
               <ContentCardSmall :thematic="thematic" class="relative" @toggleModalView="toggleSmallCard(thematic)" />
             </div>
           </div>
-          <SmallGroupCards :content="contentDataGrouped" @toggleModalView="toggleSmallCard($event)"></SmallGroupCards>
+          <ClusterCardsMobile :content="contentDataGrouped" @toggleModalView="toggleSmallCard($event)"></ClusterCardsMobile>
         </div>
         <div v-if="isDesktop">
           <div v-for="thematic in contentData" :key="thematic.title" class="pb-14 text-base max-w-[850px]" :id="thematic.id">
@@ -40,21 +40,21 @@ import ContentCardSmall from '@/components/ContentCardSmall.vue'
 import ContentCard from '@/components/ContentCard.vue'
 import contentData from '@/assets/content.json'
 import contentDataGrouped from '@/assets/contentGrouped.json'
-import HeaderTop from '@/components/HeaderTop.vue'
-import HeaderTopSmall from '@/components/HeaderTopSmall.vue'
+import HeaderTopDesktop from '@/components/HeaderTopDesktop.vue'
+import HeaderTopMobile from '@/components/HeaderTopMobile.vue'
 import LandingPage from '@/components/LandingPage.vue'
 import FooterEnd from '@/components/FooterEnd.vue'
 import PraticalSection from '@/components/PraticalSection.vue'
 import ProCV from '@/components/ProCV.vue'
 import TakeAppointmentModal from '@/components/TakeAppointmentModal.vue'
-import ModalPhone from '@/components/ModalPhone.vue'
-import SmallGroupCards from '@/components/SmallGroupCards.vue'
+import ModalMobile from '@/components/ModalMobile.vue'
+import ClusterCardsMobile from '@/components/ClusterCardsMobile.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HeaderTop,
-    HeaderTopSmall,
+    HeaderTopDesktop,
+    HeaderTopMobile,
     ContentCardSmall,
     ContentCard,
     LandingPage,
@@ -62,8 +62,8 @@ export default {
     PraticalSection,
     ProCV,
     TakeAppointmentModal,
-    ModalPhone,
-    SmallGroupCards
+    ModalMobile,
+    ClusterCardsMobile
   },
   setup() {
     const screenWidth = ref(window.innerWidth);
