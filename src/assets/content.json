@@ -110,7 +110,7 @@
     "icon": "fa-solid fa-phone",
     "firstContentSmall": [
       "J’accueille les patients le mardi de 9h à 20h.",
-      "07 83 10 07 32"
+      "<a class='font-title text-dark-green underline' href='tel:0783100732'>07 83 10 07 32</a>"
     ],
     "contentSmall": [
       {

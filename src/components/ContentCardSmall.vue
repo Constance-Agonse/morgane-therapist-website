@@ -11,7 +11,7 @@
           @click="showMoreContentSmall()">Voir plus</button>
       </div>
       <div v-for="(sentence, index) in thematic.firstContentSmall" :key="index">
-       {{ sentence }}
+        <div v-html="sentence"></div>
       </div>
       <div v-if="isDesktop"> 
         <div v-for="message in content" :key="message.index" class="pb-3">

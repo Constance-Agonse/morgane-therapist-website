@@ -17,7 +17,7 @@
           :class="contentSentence.class">
           <div class="mb-1" v-if="!contentSentence.type">{{ contentSentence.text }}</div>
           <div class="mb-1" v-if="contentSentence.type === 'link'" v-html="contentSentence.text"></div>
-          <a class="mb-1" v-if="contentSentence.type === 'phone'" :href="'tel:'+contentSentence.text">{{ contentSentence.text }}</a>
+          <a class="mb-1 font-title text-dark-green underline" v-if="contentSentence.type === 'phone'" :href="'tel:'+contentSentence.text">{{ contentSentence.text }}</a>
         </div>
       </div>
       <div v-if="content.contentSmallColumns" class="overflow-y-auto min-h-[10%] max-h-[75%] mt-2">
