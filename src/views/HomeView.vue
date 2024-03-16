@@ -7,7 +7,7 @@
   <div class="bg-light-green" :class="{ 'overflow-hidden': isModalDisplayed }">
     <div>
       <HeaderTopDesktop v-if="isDesktop" class="sticky top-0 z-10" ref="header" id="header" @appointmentClicked="toggleAppointmentModal()" />
-      <HeaderTopMobile v-if="!isDesktop" class="sticky top-0 z-10" ref="header" />
+      <HeaderTopMobile v-if="!isDesktop" class="sticky top-0 z-10" ref="header" id="header"/>
       <div class="p-6" :class="{ 'px-28': isDesktop, 'overflow-hidden': isModalDisplayed }">
         <LandingPage v-if="isDesktop" :height="contentHeight" class="h-full max-w-[850px]" id="landing" />
         <div v-if="!isDesktop">
