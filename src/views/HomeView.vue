@@ -104,31 +104,20 @@ export default {
     }
   },
   mounted() {
-    console.log('mounted:')
-    // console.log('screenWidth:', this.screenWidth)
-    // Calculate content height when the component is mounted
     this.calculateContentHeight();
-    // Recalculate content height when the window is resized
     window.addEventListener('resize', this.calculateContentHeight);
     this.adjustScrollForFixedHeader();
   },
   methods: {
     calculateContentHeight() {
-      console.log('calculateContentHeight:')
-      // Get the height of the header
       const headerHeight = this.$refs.header.$el.offsetHeight;
-      console.log('headerHeight:', headerHeight)
-      // Calculate the remaining height of the screen
       this.contentHeight = window.innerHeight - headerHeight;
-      console.log('this.contentHeight:', this.contentHeight)
     },
     toggleAppointmentModal() {
       this.isAppointmentModalShown = !this.isAppointmentModalShown;
     },
     toggleSmallCard(thematic) {
-      console.log('truc:', thematic)
       this.thematicOnFocus = thematic;
-      console.log('this.thematicOnFocus:', this.thematicOnFocus)
       this.isModalDisplayed = !this.isModalDisplayed;
       if (this.isModalDisplayed) document.body.classList.add('overflow-hidden');
       else if (!this.isModalDisplayed) document.body.classList.remove('overflow-hidden');
