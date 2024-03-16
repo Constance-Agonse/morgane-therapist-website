@@ -22,7 +22,7 @@
           <div v-for="thematic in contentData" :key="thematic.title" class="pb-14 text-base max-w-[850px]" :id="thematic.id">
             <div v-if="thematic.isDisplayedInBigScreen">
               <ContentCard :thematic="thematic" class="relative" @toggleModalView="toggleSmallCard(thematic)">
-                <ProCV v-if="thematic.id === 'pro'" isDesktop="true" />
+                <ProCV v-if="thematic.id === 'pro'" isDesktop />
               </ContentCard>
             </div>
           </div>
