@@ -6,12 +6,12 @@
     :content="thematicOnFocus" />
   <div class="bg-light-green" :class="{ 'overflow-hidden': isModalDisplayed }">
     <div>
-      <HeaderTop v-if="isDesktop" class="sticky top-0 z-10" ref="header" @appointmentClicked="toggleAppointmentModal()" />
+      <HeaderTop v-if="isDesktop" class="sticky top-0 z-10" ref="header" id="header" @appointmentClicked="toggleAppointmentModal()" />
       <HeaderTopSmall v-if="!isDesktop" class="sticky top-0 z-10" ref="header" />
       <div class="p-6" :class="{ 'px-28': isDesktop, 'overflow-hidden': isModalDisplayed }">
         <LandingPage v-if="isDesktop" :height="contentHeight" class="h-full max-w-[850px]" id="landing" />
         <div v-if="!isDesktop">
-          <div v-for="thematic in contentData" :key="thematic.title" class="pb-6 max-w-[850px]" id="pro">
+          <div v-for="thematic in contentData" :key="thematic.title" class="pb-6 max-w-[850px]" id="pro"> 
             <div v-if="thematic.titleSmall">
               <ContentCardSmall :thematic="thematic" class="relative" @toggleModalView="toggleSmallCard(thematic)" />
             </div>
@@ -19,7 +19,7 @@
           <SmallGroupCards :content="contentDataGrouped" @toggleModalView="toggleSmallCard($event)"></SmallGroupCards>
         </div>
         <div v-if="isDesktop">
-          <div v-for="thematic in contentData" :key="thematic.title" class="pb-14 text-base max-w-[850px]" id="pro">
+          <div v-for="thematic in contentData" :key="thematic.title" class="pb-14 text-base max-w-[850px]" :id="thematic.id">
             <div v-if="thematic.isDisplayedInBigScreen">
               <ContentCard :thematic="thematic" class="relative" @toggleModalView="toggleSmallCard(thematic)">
                 <ProCV v-if="thematic.id === 'pro'" isDesktop="true" />
@@ -110,6 +110,7 @@ export default {
     this.calculateContentHeight();
     // Recalculate content height when the window is resized
     window.addEventListener('resize', this.calculateContentHeight);
+    this.adjustScrollForFixedHeader();
   },
   methods: {
     calculateContentHeight() {
@@ -131,6 +132,24 @@ export default {
       this.isModalDisplayed = !this.isModalDisplayed;
       if (this.isModalDisplayed) document.body.classList.add('overflow-hidden');
       else if (!this.isModalDisplayed) document.body.classList.remove('overflow-hidden');
+    },
+    adjustScrollForFixedHeader() {
+      const header = document.querySelector('#header');
+      if (!header) return;
+  
+      const internalLinks = document.querySelectorAll('a[href^="#"]');
+      internalLinks.forEach(link => {
+        link.addEventListener('click', event => {
+          event.preventDefault();
+          const targetId = link.getAttribute('href').substring(1);
+          const targetSection = document.getElementById(targetId);
+          const offset = header.offsetHeight;
+          window.scrollTo({
+            top: targetSection.offsetTop - offset,
+            behavior: 'smooth' 
+          });
+        });
+      });
     }
   },
 }
