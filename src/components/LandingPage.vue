@@ -9,16 +9,11 @@
 
   </div>
 </template>
-
-
 <script>
-// import SplitType from 'split-type';
-// import { useMotion } from '@vueuse/motion';
 
 export default {
   name: 'LandingPage',
   props: {
-    msg: String,
     height: {
       type: Number,
       required: true,
@@ -26,13 +21,6 @@ export default {
   },
   setup() {
   },
-
 }
-/* eslint-disable */
-// let text = new SplitType('#text');
-// console.log('text:', text)
-// let characters = document.querySelectorAll('.char');
-// for (let i = 0; i < characters.length; i++) {
-//   characters[i].classList.add('translate-y-full');
-// }
+
 </script>

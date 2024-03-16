@@ -17,11 +17,6 @@ export default {
     title: String,
     icon: String
   },
-  data() {
-    return {
-    }
-  }
-
 }
 </script>
 

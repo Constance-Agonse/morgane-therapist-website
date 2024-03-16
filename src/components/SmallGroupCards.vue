@@ -37,8 +37,6 @@ export default {
   },
   methods : {
     showMoreContentSmall(id){
-      console.log('id:', id)
-      console.log()
       this.$emit('toggleModalView', id);
     }
   },

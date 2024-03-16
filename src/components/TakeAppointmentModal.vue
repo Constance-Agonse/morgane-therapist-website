@@ -15,10 +15,6 @@ export default {
   name: 'TakeAppointmentModal',
   props: {
   },
-  data() {
-    return {
-    }
-  },
   methods: {
     closeModal() {
       this.$emit('closeAppointmentModal');

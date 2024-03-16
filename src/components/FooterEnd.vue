@@ -13,9 +13,6 @@
 <script>
 export default {
   name: 'FooterEnd',
-  props: {
-    msg: String
-  },
 }
 </script>
 

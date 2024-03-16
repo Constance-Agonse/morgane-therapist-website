@@ -22,9 +22,6 @@
 <script>
 export default {
   name: 'HeaderTop',
-  props: {
-    msg: String
-  },
   methods: {
     openAppointmentModal() {
       this.$emit('appointmentClicked');
@@ -40,7 +37,6 @@ export default {
       ]
     }
   },
-
 }
 </script>
 

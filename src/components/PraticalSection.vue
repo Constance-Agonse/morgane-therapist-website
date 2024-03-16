@@ -30,11 +30,9 @@
           <div class="font-title">Informations pratiques :</div>
           <div>Rez-de-chaussée</div>
         </div>
-
         <a href="https://maps.app.goo.gl/twRmMPLQjk9Rocb66" target="_blank"
           class="bg-dark-green rounded-md py-1 px-4 text-green transition-all duration-300 ease-in-out hover:scale-[1.025] hover:text-light-green">
           Localiser le cabinet sur une carte</a>
-
       </div>
 
     </SmallCard>
@@ -47,7 +45,6 @@
             selon le type de soins, le nombre de consultations et les actes additionnels nécessaires.
           </div>
         </div>
-
         <div class="font-title">Consultation non remboursée par l'Assurance Maladie</div>
         <div>
           <div class="font-title">Moyens de paiement :</div>
@@ -63,17 +60,9 @@
 import SmallCard from './SmallCard.vue';
 export default {
   name: 'PraticalSection',
-  props: {
-    msg: String
-  },
   components: {
     SmallCard
   },
-  data() {
-    return {
-    }
-  }
-
 }
 </script>
 

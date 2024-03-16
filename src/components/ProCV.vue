@@ -4,7 +4,6 @@
       <div class="font-title">Diplômes nationaux et universitaires</div>
       <CvDateDescription :line="contentCv.diplomas[0]" :isDesktop="isDesktop"/>
     </div>
-
     <div class="flex flex-col gap-3">
       <div class="font-title">Autres formations</div>
       <CvDateDescription v-for="(course, index) in contentCv.courses" :key="index" :line="course" :isDesktop="isDesktop"/>
