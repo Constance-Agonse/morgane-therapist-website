@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row items-center gap-6 bg-light-green">
-    <SmallCard title="Prendre rendez-vous" icon="fa-regular fa-calendar-check">
+    <VerticalCard title="Prendre rendez-vous" icon="fa-regular fa-calendar-check">
       <div class="flex flex-col gap-4 items-center">
         <div>
           Je suis joignable par téléphone pour toute question ou précision préalable. J’accueille les patients le mardi de
@@ -15,9 +15,9 @@
         </a>
       </div>
 
-    </SmallCard>
+    </VerticalCard>
 
-    <SmallCard title="Accéder au cabinet" icon="fa-solid fa-location-dot">
+    <VerticalCard title="Accéder au cabinet" icon="fa-solid fa-location-dot">
       <div class="flex flex-col gap-4 items-center">
         <div class="font-title">13 Rue du Baigneur, 75018 Paris</div>
         <div>
@@ -35,9 +35,9 @@
           Localiser le cabinet sur une carte</a>
       </div>
 
-    </SmallCard>
+    </VerticalCard>
 
-    <SmallCard title="A savoir" icon="fa-solid fa-circle-info">
+    <VerticalCard title="A savoir" icon="fa-solid fa-circle-info">
       <div class="flex flex-col gap-4 items-center">
         <div>
           <div class="font-title">Consultation de psychologie 60 €</div>
@@ -52,16 +52,16 @@
           Chèques et espèces
         </div>
       </div>
-    </SmallCard>
+    </VerticalCard>
   </div>
 </template>
 
 <script>
-import SmallCard from './SmallCard.vue';
+import VerticalCard from './VerticalCard.vue';
 export default {
   name: 'PraticalSection',
   components: {
-    SmallCard
+    VerticalCard
   },
 }
 </script>

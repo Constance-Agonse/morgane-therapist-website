@@ -36,7 +36,6 @@ export default {
   },
   methods : {
     showMoreContentSmall(){
-      console.log('this.thematic.id:', this.thematic.id)
       this.$emit('toggleModalView', this.thematic.id);
     }
   }

@@ -4,6 +4,7 @@
       <div v-for="(item, index) in content" :key="index" class="flex flex-row w-full justify-between items-baseline border-b border-light-grey py-3" :class="{ '!border-0': index >= content.length-1}">
         <div class="flex flex-row gap-2 items-baseline">
           <i :class="item.icon"></i>
+          ta meer
           <h1 class="font-title">{{ item.title }}</h1>
         </div>
         <button
