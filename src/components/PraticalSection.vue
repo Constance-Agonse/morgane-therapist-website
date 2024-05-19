@@ -52,6 +52,7 @@
           <div class="font-extrabold">Cartes bancaires non acceptées</div>
           <div>Chèques et espèces</div>
         </div>
+        <div class="text-xs">Je ne pratique ni de bilan de quotient intellectuel (type WISC V, WAIS), ni de bilan attentionnel pour diagnostiquer les TDA/H, ni de tests de personnalité.</div>
       </div>
     </VerticalCard>
   </div>
