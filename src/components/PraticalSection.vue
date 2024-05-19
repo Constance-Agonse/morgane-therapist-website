@@ -48,8 +48,8 @@
         <div class="font-title">Consultation non remboursée par l'Assurance Maladie</div>
         <div>
           <div class="font-title">Moyens de paiement :</div>
-          Cartes bancaires non acceptées
-          Chèques et espèces
+          <div class="font-extrabold">Cartes bancaires non acceptées</div>
+          <div>Chèques et espèces</div>
         </div>
       </div>
     </VerticalCard>
