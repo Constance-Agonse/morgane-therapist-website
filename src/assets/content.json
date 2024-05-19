@@ -125,6 +125,10 @@
       {
         "class": "font-body",
         "text": "Le cabinet est situé dans le 18e arrondissement de Paris. C'est un petit cabinet paramédical où travaillent plusieurs psychologues, une infirmière, un ostéopathe."
+      },
+      {
+        "class": "font-body font-bold",
+        "text": "J’accueille de nouveaux patients."
       }
     ]
   }
