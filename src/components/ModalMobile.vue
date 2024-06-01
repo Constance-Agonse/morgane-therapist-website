@@ -15,8 +15,7 @@
       <div v-if="content.contentSmall" class="overflow-y-auto overflow-x-hidden min-h-[10%] max-h-[75%] mt-2">
         <div class="text-sm" v-for="(contentSentence, index) in content.contentSmall" :key="index"
           :class="contentSentence.class">
-          <div class="mb-1" v-if="!contentSentence.type">{{ contentSentence.text }}</div>
-          <div class="mb-1" v-if="contentSentence.type === 'link'" v-html="contentSentence.text"></div>
+          <div class="mb-1" v-if="!contentSentence.type || contentSentence.type === 'link'" v-html="contentSentence.text" ></div>
           <a class="mb-1 font-title text-dark-green underline" v-if="contentSentence.type === 'phone'" :href="'tel:'+contentSentence.text">{{ contentSentence.text }}</a>
         </div>
       </div>

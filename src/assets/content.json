@@ -6,19 +6,25 @@
     "id": "consultation",
     "icon": "fa-solid fa-user-doctor",
     "firstContentSmall": [
-      "Psychologue diplômée et psychothérapeute, j'accueille les adultes et également les jeunes enfants et les adolescents, sur rendez-vous au cabinet."
+      "Psychologue diplômée et psychothérapeute, j'accueille les adultes, les adolescents ainsi que les jeunes enfants, sur rendez-vous au cabinet. J’accueille également les familles, le(s) parent(s) avec leur bébé et les couples."
     ],
     "content": [
       "Les consultations psychologiques permettent d'accueillir une difficulté ressentie ou un mal-être diffus, de réfléchir ensemble à la demande qui est faite à ce sujet, et de vous accompagner pour composer au mieux avec qui vous êtes.",
       "Après les premiers rendez-vous qui permettent de faire connaissance, nous définirons ensemble le cadre thérapeutique le plus adapté à votre situation (consultations, travail thérapeutique régulier appelé psychothérapie, suivi parent(s)-enfant, soutien parental, et/ou une orientation vers un professionnel si besoin et avec votre accord) ainsi que la fréquence nécessaire.",
-      "Je propose des thérapies individuelles d'inspiration psychanalytique par la parole avec les adultes, qui visent à mettre en narration sa propre histoire, pouvoir faire du lien entre sa situation actuelle et des éléments du passé, à comprendre les répétitions et les insatisfactions qui se jouent au sein des relations et la place que l'on y occupe, à prendre davantage conscience de ses sentiments ou ses pensées inconscientes.",
-      "Un travail thérapeutique a notamment pour but de pouvoir créer un espace interne de retour sur soi pour soi, de saisir de ce qui se joue pour nous, et de devenir plus conscient de la nature de nos désirs, de nos sentiments et des implications de nos actes.",
-      "Avec les enfants, je prends d'abord un temps de consultations avec le(s) parent(s) et l'enfant. Si un travail thérapeutique régulier se met ensuite en place pour l'enfant, c'est au travers le jeu, le dessin et la parole, que l'enfant met en scène les problématiques qui l'occupent, ce qui lui permet de se les représenter et, avec l'aide du psychologue, de pouvoir mieux y faire face."
+      "<b>Avec les adultes</b>, je propose des thérapies individuelles d'inspiration psychanalytique par la parole, qui visent à mettre en narration sa propre histoire, pouvoir faire du lien entre sa situation actuelle et des éléments du passé, à comprendre les répétitions et les insatisfactions qui se jouent au sein des relations et la place que l'on y occupe, à prendre davantage conscience de ses sentiments ou ses pensées inconscientes. Un travail thérapeutique a notamment pour but de pouvoir créer un espace interne de retour sur soi pour soi, de saisir de ce qui se joue pour nous, et de devenir plus conscient de la nature de nos désirs, de nos sentiments et des implications de nos actes.",
+      "<b>Avec les enfants</b>, je prends d'abord un temps de consultations avec le(s) parent(s) et l'enfant. Si un travail thérapeutique régulier se met ensuite en place pour l'enfant, c'est au travers le jeu, le dessin et la parole, que l'enfant met en scène les problématiques qui l'occupent, ce qui lui permet de se les représenter et, avec l'aide du psychologue, de pouvoir mieux y faire face.",
+      "<b>Concernant les nourrissons</b>, il n’est pas toujours simple de savoir s’il est nécessaire de consulter. Certains nourrissons présentent très tôt (dès quelques semaines) des signes dont on sait aujourd’hui l’importance de les prendre en compte :",
+      "<ul class='consultation-list'><li> des difficultés à tenir le regard, ou une manière de contempler ce qu’il se passe autour d’eux en fixant leur regard sur des détails sans pouvoir tenir compte des sollicitations relationnelles de leur(s) parent(s),</li><li> un tonus de leur corps très tendu ou à l’inverse très mou (hypertonie ou hypotonie) qui peut rendre le bébé difficile à porter.</li><li>une absence de gazouillis.</li></ul>",
+      "Ces quelques signes ne sont bien sûr pas exhaustifs. Ces observations sont importantes car elles sont souvent les signes d’une sensibilité marquée de l’enfant qui peut entraver sa capacité à entrer en relation avec son entourage. Un accompagnement précoce du parent et de son bébé facilite un développement plus harmonieux de l’enfant et de la relation parent(s)-enfant. Cet accompagnement consiste d’abord en un temps d’échange avec le(s) parent(s) sur leur(s) observation(s) et leur vécu dans le lien avec leur bébé, qui est toujours riche d’apprentissage, puis en un temps d’observation du bébé et de son développement global. Je reçois également les familles, qui sont orientées après une première observation réalisée par la PMI ou un médecin pédiatre, pour un accompagnement régulier afin d’accompagner les parents et accompagner le bébé de manière ajustée à ses besoins spécifiques.",
+      "<b>Autour de la première ou deuxième année de l’enfant</b>, l’enfant peut présenter d’autres types de manifestations :",
+      "<ul class='consultation-list'><li>un retard dans son développement psycho-moteur (au niveau du langage, de ses mouvements, de sa capacité à se déplacer, de sa capacité à interagir avec les autres enfants)</li><li>des particularités dans sa manière de jouer (intérêts spécifiques pour certains objets, a du mal à imiter, à jouer en interaction avec quelqu’un d’autre, semble « dans sa bulle »)</li><li>des particularités sensorielles (grande sensibilité aux bruits, au toucher, à manger des morceaux, etc) et/ou au niveau de son comportement (marche sur la pointe des pieds, agite les bras quand est content ou angoissé)</li><li>une perte de certaines de ses acquisitions (gazouillait et ne gazouille plus, fuit le regard, se montre davantage fermé)</li><li>un comportement irritable, tendu, inconsolable</li><li>des difficultés à s’alimenter</li><li>un besoin constant de proximité physique avec son parent et/ou d’importantes difficultés de séparation d’avec son parent et/ou des difficultés d’adaptation à son mode de garde</li></ul>",
+      "Ces observations peuvent faire l’objet d’une consultation.",
+      "Je propose également des créneaux de <b>thérapie familiale</b> et de <b>thérapie de couple</b> (vendredi et samedi). La thérapie familiale permet de prendre en compte le système que forme la famille. Lorsqu’une personne de la famille présente une difficulté passagère, toute la famille se trouve concernée. Il arrive que la famille se réorganise autour de cette difficulté et les interactions entre chacun se rigidifient. Il est alors parfois intéressant d’accueillir la famille, les vécus de chacun, d’identifier la fonction qu’occupe cette difficulté dans le système familial afin de redonner à la famille sa souplesse de fonctionnement, des règles adaptées aux besoins de chacun et des possibilités d’évolution. La famille est alors reçue ensemble, accompagnée d’un ou deux thérapeutes. La thérapie de couple explore avec les partenaires les enjeux relationnels et les difficultés qu’ils créent dans les interactions quotidiennes et dans le projet de couple."
     ],
     "contentSmall": [
       {
         "class": "font-body",
-        "text": "Psychologue diplômée et psychothérapeute, j'accueille les adultes et également les jeunes enfants et les adolescents, sur rendez-vous au cabinet."
+        "text": "Psychologue diplômée et psychothérapeute, j'accueille les adultes, les adolescents ainsi que les jeunes enfants, sur rendez-vous au cabinet. J’accueille également les familles, le(s) parent(s) avec leur bébé et les couples."
       },
       {
         "class": "font-body",
@@ -30,15 +36,39 @@
       },
       {
         "class": "font-body",
-        "text": "Je propose des thérapies individuelles d'inspiration psychanalytique par la parole avec les adultes, qui visent à mettre en narration sa propre histoire, pouvoir faire du lien entre sa situation actuelle et des éléments du passé, à comprendre les répétitions et les insatisfactions qui se jouent au sein des relations et la place que l'on y occupe, à prendre davantage conscience de ses sentiments ou ses pensées inconscientes."
+        "text": "<b>Avec les adultes</b>, je propose des thérapies individuelles d'inspiration psychanalytique par la parole, qui visent à mettre en narration sa propre histoire, pouvoir faire du lien entre sa situation actuelle et des éléments du passé, à comprendre les répétitions et les insatisfactions qui se jouent au sein des relations et la place que l'on y occupe, à prendre davantage conscience de ses sentiments ou ses pensées inconscientes. Un travail thérapeutique a notamment pour but de pouvoir créer un espace interne de retour sur soi pour soi, de saisir de ce qui se joue pour nous, et de devenir plus conscient de la nature de nos désirs, de nos sentiments et des implications de nos actes."
       },
       {
         "class": "font-body",
-        "text": "Un travail thérapeutique a notamment pour but de pouvoir créer un espace interne de retour sur soi pour soi, de saisir de ce qui se joue pour nous, et de devenir plus conscient de la nature de nos désirs, de nos sentiments et des implications de nos actes."
+        "text": "<b>Avec les enfants</b>, je prends d'abord un temps de consultations avec le(s) parent(s) et l'enfant. Si un travail thérapeutique régulier se met ensuite en place pour l'enfant, c'est au travers le jeu, le dessin et la parole, que l'enfant met en scène les problématiques qui l'occupent, ce qui lui permet de se les représenter et, avec l'aide du psychologue, de pouvoir mieux y faire face."
       },
       {
         "class": "font-body",
-        "text": "Avec les enfants, je prends d'abord un temps de consultations avec le(s) parent(s) et l'enfant. Si un travail thérapeutique régulier se met ensuite en place pour l'enfant, c'est au travers le jeu, le dessin et la parole, que l'enfant met en scène les problématiques qui l'occupent, ce qui lui permet de se les représenter et, avec l'aide du psychologue, de pouvoir mieux y faire face."
+        "text": "<b>Concernant les nourrissons</b>, il n’est pas toujours simple de savoir s’il est nécessaire de consulter. Certains nourrissons présentent très tôt (dès quelques semaines) des signes dont on sait aujourd’hui l’importance de les prendre en compte :"
+      },
+      {
+        "class": "font-body",
+        "text": "<ul class='consultation-list'><li> des difficultés à tenir le regard, ou une manière de contempler ce qu’il se passe autour d’eux en fixant leur regard sur des détails sans pouvoir tenir compte des sollicitations relationnelles de leur(s) parent(s)</li><li> un tonus de leur corps très tendu ou à l’inverse très mou (hypertonie ou hypotonie) qui peut rendre le bébé difficile à porter</li><li>une absence de gazouillis</li></ul>"
+      },
+      {
+        "class": "font-body",
+        "text": "Ces quelques signes ne sont bien sûr pas exhaustifs. Ces observations sont importantes car elles sont souvent les signes d’une sensibilité marquée de l’enfant qui peut entraver sa capacité à entrer en relation avec son entourage. Un accompagnement précoce du parent et de son bébé facilite un développement plus harmonieux de l’enfant et de la relation parent(s)-enfant. Cet accompagnement consiste d’abord en un temps d’échange avec le(s) parent(s) sur leur(s) observation(s) et leur vécu dans le lien avec leur bébé, qui est toujours riche d’apprentissage, puis en un temps d’observation du bébé et de son développement global. Je reçois également les familles, qui sont orientées après une première observation réalisée par la PMI ou un médecin pédiatre, pour un accompagnement régulier afin d’accompagner les parents et accompagner le bébé de manière ajustée à ses besoins spécifiques. "
+      },
+      {
+        "class": "font-body",
+        "text": "<b>Autour de la première ou deuxième année de l’enfant</b>, l’enfant peut présenter d’autres types de manifestations :"
+      },
+      {
+        "class": "font-body",
+        "text": "<ul class='consultation-list'><li>un retard dans son développement psycho-moteur (au niveau du langage, de ses mouvements, de sa capacité à se déplacer, de sa capacité à interagir avec les autres enfants)</li><li>des particularités dans sa manière de jouer (intérêts spécifiques pour certains objets, a du mal à imiter, à jouer en interaction avec quelqu’un d’autre, semble « dans sa bulle »)</li><li>des particularités sensorielles (grande sensibilité aux bruits, au toucher, à manger des morceaux, etc) et/ou au niveau de son comportement (marche sur la pointe des pieds, agite les bras quand est content ou angoissé)</li><li>une perte de certaines de ses acquisitions (gazouillait et ne gazouille plus, fuit le regard, se montre davantage fermé)</li><li>un comportement irritable, tendu, inconsolable</li><li>des difficultés à s’alimenter</li><li>un besoin constant de proximité physique avec son parent et/ou d’importantes difficultés de séparation d’avec son parent et/ou des difficultés d’adaptation à son mode de garde</li></ul>"
+      },
+      {
+        "class": "font-body",
+        "text": "Ces observations peuvent faire l’objet d’une consultation."
+      },
+      {
+        "class": "font-body",
+        "text": "Je propose également des créneaux de <b>thérapie familiale</b> et de <b>thérapie de couple</b> (vendredi et samedi). La thérapie familiale permet de prendre en compte le système que forme la famille. Lorsqu’une personne de la famille présente une difficulté passagère, toute la famille se trouve concernée. Il arrive que la famille se réorganise autour de cette difficulté et les interactions entre chacun se rigidifient. Il est alors parfois intéressant d’accueillir la famille, les vécus de chacun, d’identifier la fonction qu’occupe cette difficulté dans le système familial afin de redonner à la famille sa souplesse de fonctionnement, des règles adaptées aux besoins de chacun et des possibilités d’évolution. La famille est alors reçue ensemble, accompagnée d’un ou deux thérapeutes. La thérapie de couple explore avec les partenaires les enjeux relationnels et les difficultés qu’ils créent dans les interactions quotidiennes et dans le projet de couple."
       },
       {
         "class": "font-body font-bold",
@@ -54,7 +84,7 @@
     "content": [
       "J'ai travaillé plusieurs années auprès de populations adultes et étudiantes (présentant des difficultés relationnelles, amoureuses, conjugales ou familiales, des angoisses, une tristesse, une souffrance liée à une séparation, des gênes par rapport à leur fonctionnement, des difficultés à s'investir ou des blocages) dans plusieurs institutions (université, CMP, MDA).",
       "Actuellement, en parallèle de ma pratique en cabinet, j'exerce au sein d'un centre médico-psychologique (CMP) pour enfants et adolescents présentant des difficultés diverses (difficultés de langage, problèmes de comportement, colères, agitation, peurs, difficultés à l'école, difficultés dans les relations aux autres enfants, démobilisation dans le travail scolaire, angoisses, idées noires, etc.).",
-      "Nous réalisons aussi un travail d’accompagnement précoce des parents et de leurs bébés."
+      "Je suis formée à la pratique du psychodrame analytique individuel (COPES), à la thérapie familiale systémique (Association Parisienne de Recherche et de Travail avec les Familles), et la thérapie individuelle psychanalytique des enfants (Société Européenne pour la Psychanalyse de l'Enfant et de l'Adolescent)."
     ],
     "seeMore": true
   },
@@ -120,16 +150,19 @@
     "contentSmall": [
       {
         "class": "font-body",
-        "type": "phone",
-        "text": "07 83 10 07 32"
+        "text": "Je suis joignable par téléphone pour toute question ou précision préalable, à la prise d’un rendez-vous."
       },
       {
         "class": "font-body",
-        "text": "Je suis joignable par téléphone pour toute question ou précision préalable. J’accueille les patients le mardi de 9h à 20h."
+        "text": "Je consulte au cabinet uniquement la journée du mardi de 9h à 20h."
       },
       {
         "class": "font-body",
-        "text": "Le cabinet est situé dans le 18e arrondissement de Paris. C'est un petit cabinet paramédical où travaillent plusieurs psychologues, une infirmière, un ostéopathe."
+        "text": "Vous pouvez me joindre au 07 83 10 07 32 (du lundi au vendredi de 9h à 19h)."
+      },
+      {
+        "class": "font-body",
+        "text": "Le cabinet est situé dans le 18e arrondissement de Paris. C'est un petit cabinet paramédical où travaillent plusieurs psychologues, une infirmière, et un ostéopathe, au rez-de-chaussée."
       },
       {
         "class": "font-body font-bold",
