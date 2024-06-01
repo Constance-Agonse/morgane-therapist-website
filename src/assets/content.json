@@ -120,16 +120,19 @@
     "contentSmall": [
       {
         "class": "font-body",
-        "type": "phone",
-        "text": "07 83 10 07 32"
+        "text": "Je suis joignable par téléphone pour toute question ou précision préalable, à la prise d’un rendez-vous."
       },
       {
         "class": "font-body",
-        "text": "Je suis joignable par téléphone pour toute question ou précision préalable. J’accueille les patients le mardi de 9h à 20h."
+        "text": "Je consulte au cabinet uniquement la journée du mardi de 9h à 20h."
       },
       {
         "class": "font-body",
-        "text": "Le cabinet est situé dans le 18e arrondissement de Paris. C'est un petit cabinet paramédical où travaillent plusieurs psychologues, une infirmière, un ostéopathe."
+        "text": "Vous pouvez me joindre au 07 83 10 07 32 (du lundi au vendredi de 9h à 19h)."
+      },
+      {
+        "class": "font-body",
+        "text": "Le cabinet est situé dans le 18e arrondissement de Paris. C'est un petit cabinet paramédical où travaillent plusieurs psychologues, une infirmière, et un ostéopathe, au rez-de-chaussée."
       },
       {
         "class": "font-body font-bold",

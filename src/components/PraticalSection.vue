@@ -3,17 +3,18 @@
     <VerticalCard title="Prendre rendez-vous" icon="fa-regular fa-calendar-check">
       <div class="flex flex-col gap-4 items-center">
         <div>
-          Je suis joignable par téléphone pour toute question ou précision préalable. J’accueille les patients le mardi de
-          9h à 20h.
+          Je suis joignable par téléphone pour toute question ou précision préalable, à la prise d’un rendez-vous. 
+          Je consulte au cabinet uniquement la journée du mardi de 9h à 20h.
         </div>
-        <div>Le cabinet, situé dans le 18e arrondissement de Paris, est un petit cabinet paramédical où travaillent
-          plusieurs psychologues, une infirmière, un ostéopathe.
-        </div>
+        <div>Vous pouvez me joindre au  
+          <a href="tel:0783100732" class="text-dark-green flex flex-row justify-center gap-2 items-center transition-all duration-300 ease-in-out hover:scale-[1.025] hover:text-darker-green hover:underline">
+            <i class="fa-solid fa-phone"></i>
+            07 83 10 07 32
+          </a> 
+          (du lundi au vendredi de 9h à 19h).</div>
+        <div>Le cabinet est situé dans le 18e arrondissement de Paris. C'est un petit cabinet paramédical où travaillent plusieurs psychologues, une infirmière, et un ostéopathe, au rez-de-chaussée.</div>
         <div class="font-extrabold">J'accueille de nouveaux patients.</div>
-        <a href="tel:0783100732" class="text-dark-green flex flex-row gap-2 items-center transition-all duration-300 ease-in-out hover:scale-[1.025] hover:text-darker-green hover:underline">
-          <i class="fa-solid fa-phone"></i>
-          07 83 10 07 32
-        </a>
+       
       </div>
 
     </VerticalCard>
